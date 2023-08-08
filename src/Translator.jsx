@@ -168,7 +168,7 @@ const Translator = () => {
                                 <i className='fas fa-volume-up ' onClick={() => handleTextToSpeech('from')}></i>
                                 <i className='fas fa-copy ' onClick={() => handleCopyText('from')} ></i>
                             </div>
-                            <div className='md:pl-8 pl-4'>
+                            <div className='md:pl-8 pl-4 '>
                                 <select value={fromLanguange} onChange={(e) => setFromLanguange(e.target.value)} className='text-gray-800 outline-none border-none md:text-lg text-sm bg-none cursor-pointer ' >
                                     {Object.keys(countries).map((code) => (
                                         <option key={code} value={code}>
@@ -182,7 +182,7 @@ const Translator = () => {
                             <i class="fa fa-exchange-alt" aria-hidden="true" onClick={handleExchange}></i>
                         </div>
                         <div className='flex md:flex-row flex-col md:gap-0 gap-2 md:justify-center md:items-center '>
-                            <div className='md:pr-8 pr-4 md:justify-center flex justify-end items-end'>
+                            <div className='md:pr-8 pr-4 md:justify-center flex justify-end items-end '>
                                 <select value={toLanguange} onChange={(e) => setToLanguange(e.target.value)} className='text-gray-800 outline-none border-none md:text-lg text-sm bg-none cursor-pointer '>
                                     {Object.keys(countries).map((code) => (
                                         <option key={code} value={code}>
@@ -191,7 +191,7 @@ const Translator = () => {
                                     ))}
                                 </select>
                             </div>
-                            <div className='flex items-center justify-between w-[38%] md:text- md:px-4 md:pl-4 ml-6 md:gap-0 gap-6 md:border-l-2 border-gray-300'>
+                            <div className='flex items-center justify-between w-[38%] md:text- md:px-4 md:pl-4 md:gap-0 gap-6 md:border-l-2 border-gray-300'>
                                 <i className='fas fa-volume-up ' onClick={() => handleTextToSpeech('to')}></i>
                                 <i className='fas fa-copy ' onClick={() => handleCopyText('to')} ></i>
                             </div>
