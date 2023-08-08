@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    @apply font-Poppins ;
+}
+
+body {
+    @apply bg-gradient-to-r from-blue-600 to-purple-500;
+}
+
+textarea {
+    @apply h-64 w-full outline-none resize-none bg-none text-lg py-3 px-4 
+}
+
+textarea::placeholder {
+    @apply text-gray-400
+}
+
+i{
+    @apply flex text-center w-12 text-gray-400 text-sm cursor-pointer transition-transform duration-200 ease-in
+}
+
+/* i:active {
+    @apply transform scale
+} */
